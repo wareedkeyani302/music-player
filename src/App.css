@@ -1,38 +1,119 @@
-.App {
+/* body {
+  background-image: url('../public/Audio-Files/background-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.audio-player {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.audio-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.audio-info img {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  margin-right: 16px;
+}
+
+.track-info {
+  flex-grow: 1;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.controls button {
+  margin: 0 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+input[type='range'] {
+  width: 100%;
+  margin: 0 8px;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../public/Audio-Files/background-img.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.audio-player {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.audio-info {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 20px;
+}
+
+.audio-info img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; 
+  margin-right: 16px;
+}
+
+.track-info {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+.controls button {
+  margin: 0 8px;
+  padding: 10px; 
+  cursor: pointer;
+  font-size: 20px; 
+  background-color: #fff;
+  border: none;
+  border-radius: 50%; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease; 
+}
+
+.controls button:hover {
+  background-color: #f0f0f0; 
+}
+
+input[type='range'] {
+  width: 100%;
+  margin: 20px 5px;
+}
+h1.top-heading {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding-left: 1rem;
+  font-size: 2.3rem;
 }

@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import AudioPlayer from './component/AudioPlayer';
 
-function App() {
+const App = () => {
+  const audioData = {
+    url: `${process.env.PUBLIC_URL}/Audio-Files/Awaara.mp3`,
+    // url: `${process.env.PUBLIC_URL}/Audio-Files/Hips.mp3`,
+    // url: `${process.env.PUBLIC_URL}/Audio-Files/waka.mp3`,
+    cover: 'https://placekitten.com/80/80', 
+    title: 'Awaara',
+    author: 'Saim Bhat',
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='audio'>
+      <h1 className='top-heading'>Audio Player In React Js</h1>
+      <AudioPlayer audioData={audioData} />
     </div>
-  );
+  )
 }
 
 export default App;
